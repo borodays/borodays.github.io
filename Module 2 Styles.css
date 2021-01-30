@@ -1,0 +1,13 @@
+h1 {
+    color:palevioletred;
+}
+#second { 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#third {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+}
+#construction{
+    font-family:monospace;
+}
