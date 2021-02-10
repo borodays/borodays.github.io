@@ -5,26 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Module 2 Styles.css">
-    <title>Page 2</title>
+    <script src = "sampleJS.js"></script>
+    <title>Gallery</title>
 </head>
 <body>
     <b5-nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Page 1.html">About</a>
+                <a class="nav-link" href="Page 1.html">Ballet Plots</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active">Data</a>
+                <a class="nav-link active">Gallery</a>
             </li>
         </ul>
     </b5-nav>
-    <div class="container-fluid">
-        <h1>Data</h1>
-        <p id="construction">This site is currently under construction; data coming soon!</p>
+    <div class = "container-fluid" id = "removable">
+        <img src = "../images/header2.JPG" class = "img-fluid height: 50%" id = "splash_header">
+    </div>
+    <div class="container-fluid splash_page">
+        <h1>Gallery</h1>
+        <p id = "desc">All images are of myself, most are very awkward</p>
+        <p id = "opt">Too many images?</p>
+        <button type = "button" class = "btn btn-primary" onclick = "remove()">Remove header!</button>
+    </div>
+    <div class = "container-fluid mt-2">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/child.JPG" width = contain class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/notBallet.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/snowflakes.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
     </div>
 </body>
 </html>

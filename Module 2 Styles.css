@@ -11,3 +11,22 @@ h1 {
 #construction{
     font-family:monospace;
 }
+body{
+    background-color:#ebd5b3;
+    background-size: contain;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.splash_page{
+    background-color: seashell;
+    
+}
+#second{
+    font-size:smaller;
+}
+.btn{
+    background-color: palevioletred;
+    font-size:smaller;
+}
+.accordion{
+    background-color: seashell;
+}
