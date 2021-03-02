@@ -131,7 +131,7 @@ function mapLoad(){
   }
 
   var parentElement = document.getElementById("ochreTableBody");
-  var url = "http://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300";
+  var url = "https://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300";
 
   function loadXML(){
         XMLrequest(url);
