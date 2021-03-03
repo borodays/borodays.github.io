@@ -12,6 +12,7 @@ body{
     background-image: url("../images/Sky.jpg");
     background-size: contain;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 100px;
 }
 #splash_page{
     background-color: seashell;
@@ -67,4 +68,5 @@ h4{
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 25px;
 }
