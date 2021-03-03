@@ -50,7 +50,7 @@ function wikiAPI(){
             var newLink = document.createElement("a");
             var link = "https://en.wikipedia.org/?curid=";
             newLink.setAttribute("class", "stretched-link");
-            newLink.href=link + pages[i].pageid;
+            newLink.setAttribute("href", link + pages[i].pageid);
             newLink.innerText = pages[i].title;
             newLink.className = "d-block";
             document.getElementById("wiki").appendChild(newLink);
