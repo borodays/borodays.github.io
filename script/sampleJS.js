@@ -47,14 +47,13 @@ function wikiAPI(){
         var wikiObject = JSON.parse(this.response);
         var pages = wikiObject.query.pages;
         for (var i in pages) {
-            var newDiv = document.createElement("div");
             var newLink = document.createElement("a");
-            var link = "https://en.wikipedia.org/?curid=" + pages[i].pageid;
-            newDiv.setAttribute("class", "row h6");
+            var link = "https://en.wikipedia.org/?curid=";
             newLink.setAttribute("class", "stretched-link");
-            newLink.href=link;
-            document.getElementById("wiki").appendChild(newDiv).appendChild(newLink);
+            newLink.href=link + pages[i].pageid;
             newLink.innerText = pages[i].title;
+            newLink.className = "d-block";
+            document.getElementById("wiki").appendChild(newLink);
         }
     }
     connect.send();
@@ -131,7 +130,7 @@ function mapLoad(){
   }
 
   var parentElement = document.getElementById("ochreTableBody");
-  var url = "https://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300";
+  var url = "http://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300";
 
   function loadXML(){
         XMLrequest(url);
