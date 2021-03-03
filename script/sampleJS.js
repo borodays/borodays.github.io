@@ -49,10 +49,9 @@ function wikiAPI(){
         for (var i in pages) {
             var newLink = document.createElement("a");
             var link = "https://en.wikipedia.org/?curid=";
-            newLink.setAttribute("class", "stretched-link");
+            newLink.setAttribute("class", "stretched-link d-block");
             newLink.setAttribute("href", link + pages[i].pageid);
             newLink.innerText = pages[i].title;
-            newLink.className = "d-block";
             document.getElementById("wiki").appendChild(newLink);
         }
     }
